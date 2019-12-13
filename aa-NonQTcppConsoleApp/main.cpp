@@ -42,7 +42,7 @@ void randColors(Info* info)
 
 int main()
 {
-    srand(ui32(time(nullptr)));
+    srand(ui32(time(nullptr))); // random seed set to seconds since epoch
     Info info = {10, 10, 1, 1, {}, {}};
     randColors(&info);
 
